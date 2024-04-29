@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "PressStart2P-Regular";
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
+
+body {
+  background-color: lightblue;
+  font-family: "PressStart2P-Regular";
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-family: "PressStart2P-Regular";
+  border: 1px solid grey;
+}
+
+button:hover {
+  background-color: rgba(127, 255, 212, 0.5);
+}
+
+.result {
+  width: 320px;
+  height: 80px;
+  background-color: aquamarine;
+  border: 1px solid grey;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.calculator-buttons {
+  width: 320px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 교차축에 대한 정렬 */
+  /* justify-content: center; */
+  height: 800px;
+}
